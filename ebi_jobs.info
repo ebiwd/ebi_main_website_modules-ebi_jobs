@@ -1,0 +1,4 @@
+name = EBI Jobs
+description = Export different blocks for JOBS page
+core = 7.x
+package = EBI

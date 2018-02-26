@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Various Job related functions.
+ */
+
+ /**
+ * Implements hook_block_info().
+ */
+function ebi_jobs_block_info() {
+  $blocks = [];
+
+  $blocks['jobs_listing_filter'] = [
+  'info' => t('Jobs Listing Filter'),
+  ];
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function ebi_jobs_block_view($delta = '') {
+  $block = [];
+
+  if ($delta == 'jobs_listing_filter') {
+    drupal_add_css(drupal_get_path('module', 'ebi_jobs') . "/css/jobs_filter.css");
+    $block['content'] = theme('_ebi_jobs_listing_filter');
+  }
+
+  return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ebi_jobs_theme() {
+  $theme = [
+    '_ebi_jobs_listing_filter' => [
+      'template' => 'jobs-listing-filter',
+      'path' => drupal_get_path('module', 'ebi_jobs') . '/templates',
+    ],
+  ];
+
+  return $theme;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function ebi_jobs_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'views_exposed_form' && $form_state['view']->name == 'jobs_main_listing') {
+
+
+  }
+}
+

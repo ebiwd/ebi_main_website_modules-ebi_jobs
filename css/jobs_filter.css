@@ -1,0 +1,111 @@
+.view-jobs-main-listing .view-filters {
+    display: none;
+}
+
+.form-filter-wrapper {
+    float: left;
+    padding: 20px;
+    width: 100%;
+    margin: 20px 0;
+    clear: both;
+    background-color: #f1f1f1;
+}
+
+.job-item-row {
+    background: #fafafa;
+    padding: 20px 20px 40px 20px;
+    clear: both;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.job-item-row a {
+    color: #389198;
+}
+
+.job-item-row .expires-field {
+    font-size: .8rem;
+    color: #8c8c8c;
+    margin: 5px 0;
+}
+
+.jobs-embl-benefits {
+    margin-top: 20px;
+    background: #fafafa;
+    border: 1px solid #f1f1f1;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.jobs-embl-benefits .column {
+    margin-bottom: 15px;
+}
+
+.jobs-box {
+    background: #fafafa;
+    border: 1px solid #f1f1f1;
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+
+.jobs-box.style-2 {
+    background: #389198;
+    color: #fff;
+}
+
+.jobs-box.style-2 a,
+.jobs-box.style-2 h3 {
+    color: #fff;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+a.more-about-embl-link {
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding: 15px;
+}
+
+.view-jobs-main-listing .view-header,
+.view-jobs-main-listing .pager {
+    padding: 10px 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+    float: left;
+    width: 100%;
+}
+
+.view-jobs-main-listing .view-header a {
+    color: #389198;
+    border-color: #389198;
+}
+
+.quick-search {
+    font-size: .9rem;
+    margin-top: 15px;
+}
+
+.quick-search a,
+.quick-search a:hover,
+.quick-search a:active {
+    margin-right: 5px;
+    background: #389198;
+    color: #fff !important;
+    padding: 5px 10px;
+    border-bottom: none;
+}
+
+a.embl-jobs-link.button {
+  width: 100%;
+  margin-top: 15px;
+}
