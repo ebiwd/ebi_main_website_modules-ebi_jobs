@@ -2,7 +2,7 @@
   $keyword = !empty($_GET['keyword']) ? $_GET['keyword'] : "";
   $current_path_alias = drupal_get_path_alias();
 
-  $technology_jobs_link = l(t('Technology jobs'), $current_path_alias, [
+  $technology_jobs_link = l(t('IT/Software engineer jobs'), $current_path_alias, [
     'query' => [
       'categorization' => 'Technology',
     ],
