@@ -25,7 +25,7 @@
 <form>
   <div class="small-collapse">
     <div class="columns small-11 margin-bottom-none search-text-wrapper">
-      <input id="keyword" class="margin-bottom-none" title="EBI Search" tabindex="2" value="<?php print $keyword; ?>" type="text" name="keyword" value="" size="35"
+      <input id="keyword" class="margin-bottom-none" title="EBI Search" tabindex="2" value="<?php print filter_xss($keyword); ?>" type="text" name="keyword" value="" size="35"
         maxlength="2048" placeholder="Enter Keyword, Job Title or Skills">
       <span class="form-error margin-top-small">
         You need to enter a search query.
